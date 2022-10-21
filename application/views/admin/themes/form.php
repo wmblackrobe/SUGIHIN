@@ -30,16 +30,16 @@ foreach($themes->result_array() as $d)
                 </div>
                 <div class="form-group"><label class="col-sm-2 control-label">Disclaimer</label>
                 <div class="col-sm-10">
-                <textarea name="disclaimer" rows="10" cols="30">
+                <textarea name="disclaimer" rows="10" cols="106">
                 <?php echo $d['disclaimer'] ;?>
-</textarea> 
+                </textarea> 
 
                 
-</div>
+                </div>
                 </div>
                 <div class="form-group">
                 <div class="col-sm-10"> <input type="hidden" id="dataid" name="id_themes" value="<?php echo $d['id_themes'] ;?>"></div>
-                <div  class="col-sm-10"><input class="btn btn-primary" type="submit" name="simpan" value="simpan" onclick="return confirm('apa anda yakin ingin menyimpan data ini?')">  <a href="<?php echo site_url('app');?>" class="btn btn-danger">batal</a></div>
+                <div  class="col-sm-10"><input class="btn btn-primary" type="submit" name="simpan" value="simpan" onclick="return confirm('apa anda yakin ingin menyimpan data ini?')">  <a href="<?php echo site_url('themes');?>" class="btn btn-danger">batal</a></div>
                 </div>
             </form>
       <?php }  ?>

@@ -35,7 +35,7 @@ document.oncopy = function(){alert("copy option disabled"); return false;}
 
 document.oncut = function(){alert("cut option disabled");return false;}
 
-document.onpaste = function(){alert("paste option disabled");return false;}
+
 
 
 
