@@ -9,7 +9,7 @@ class CategoryfilmModel extends CI_Model{
 
     public function all(){
         
-        $this->db->select('sub_jenis_film.*, film.judul_film as judul, jenis_film.jenis_film ');
+        $this->db->select('sub_jenis_film.*, film.judul_film as judul, jenis_film.jenis_film, film.tahun ');
         $this->db->from('sub_jenis_film');
         $this->db->join('film','film.id_film = sub_jenis_film.id_film');
         $this->db->join('jenis_film','jenis_film.id_jenis = sub_jenis_film.id_jenis');

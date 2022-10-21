@@ -29,7 +29,6 @@ public function template($content,$data=null){
     $data['judul']= $_SESSION['judul'];
     $data['themes']= $this->themesModel->all();
     $data['menu_parent']= $this->menuModel->all();
-    
     $data['menu_child']= $this->menuChildModel->all();
     $data['content']= $this->load->view($content,$data,true);
     $this->load->view('admin/template/main',$data);

@@ -9,7 +9,7 @@ class LinkfilmModel extends CI_Model{
 
     public function all(){
         
-        $this->db->select('link_film.*, film.judul_film as judul');
+        $this->db->select('link_film.*, film.judul_film as judul, film.tahun');
         $this->db->from('link_film');
         $this->db->join('film','film.id_film = link_film.id_film');
         $query =  $this->db->get();

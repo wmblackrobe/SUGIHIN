@@ -26,7 +26,7 @@
                 $n++;?>
                 <tr>
                     <td><?php echo $n;?></td>
-                    <td><?php echo $d['judul'];?></td>
+                    <td><?php echo $d['judul'];?>-<?php echo $d['tahun'];?></td>
                     <td><?php echo $d['nama_link'];?></td>
                     <td><?php echo $d['asal_link'];?></td>
                     <td><?php echo $d['url'];?></td>

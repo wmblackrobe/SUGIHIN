@@ -26,7 +26,7 @@
                 $n++;?>
                 <tr>
                     <td><?php echo $n;?></td>
-                    <td><?php echo $d['judul'];?></td>
+                    <td><?php echo $d['judul'];?>-<?php echo $d['tahun'];?></td>
                     <td><?php echo $d['bahasa'];?></td>
                     <td><?php echo $d['url'];?></td>
                     <td> <a href="<?php echo site_url('subtitlefilm/form/'.$d['id_subtitle']);?>" class="btn btn-primary">Edit</a>

@@ -9,7 +9,7 @@ class SubtitlefilmModel extends CI_Model{
 
     public function all(){
         
-        $this->db->select('subtitle_film.*, film.judul_film as judul');
+        $this->db->select('subtitle_film.*, film.judul_film as judul,film.tahun');
         $this->db->from('subtitle_film');
         $this->db->join('film','film.id_film = subtitle_film.id_film');
         $query =  $this->db->get();
